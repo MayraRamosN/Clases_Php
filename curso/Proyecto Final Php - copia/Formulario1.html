@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400);
+        form{
+        padding: 60px;
+        max-width: 400px;
+        background-color: #E7E7E7;
+        margin: 0 auto;
+        }
+
+        form input, form textarea{
+        margin-bottom: 15px;
+        font-family: "Roboto", sans-serif;
+        width: 100%;
+        padding: 10px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; 
+        border: none; 
+        color: #525c66; 
+        font-size: 1em;
+        resize: horizontal; 
+        }
+
+        form button {
+            display: block;
+            background-color: #0095eb;
+            padding: 10px 45px 10px 45px;
+            border: 0;
+            font-size: 1em; 
+            color: 	white;
+        font-family: "Roboto", sans-serif;
+        }
+        form button: hover{
+            background-color: #046193;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+    <title>Registro Estudiante</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Estudiante</h1>
+        <form name="formulario" method="post" action="Formulario.php">
+            <input type="text" name="id" class="form-control" id="id" placeholder="ID">
+            <input type="text" name="nombres" class="form-control" id="nombres" placeholder="Nombres">
+            <input type="text" name="apellidos" class="form-control" id="apellidos" placeholder="Apellidos">
+            <input type="number" name="edad" class="form-control" id="edad" placeholder="Edad">
+            <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+            <button id="enviar" name="enviar" type="submit" class="btn">ENVIAR</button>
+        </form>	
+    </div>
+</body>
+</html>
+
+
+

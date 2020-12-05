@@ -1,0 +1,19 @@
+<html>
+<head><script language = "javascript">
+    function fncCambiar(){
+        if(document.operaciones.ValorA.value == ""){
+            alert("Debe Digitar el valor de A.");
+            return false;
+        }
+            return true;
+    }   
+        </script>  
+</head>         
+<body>
+    <form name = "operaciones" action = "resta.php" method= "post">
+       A: <input type = "text" name = "ValorA" size = "10"> 
+       B: <input type  = "text" name ="ValorB" size ="10">     
+          <input type = "button" onclick = "if (fncCambiar()) submit ()"value ="Aceptar">
+    </form>
+</body>
+</html>

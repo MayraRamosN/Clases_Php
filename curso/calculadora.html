@@ -1,0 +1,27 @@
+<html>
+<head><script language = "javascript">
+    function fncCambiar(){
+        if(document.operaciones.ValorA.value == ""){
+            alert("Debe Digitar el valor de A.");
+            return false;
+        }
+            return true;
+    }   
+        </script>  
+</head>         
+<body>
+    <form name = "operaciones" action = "calculadora.php" method= "post">
+       A: <input type = "text" name = "ValorA" size = "10"> 
+       B: <input type  = "text" name ="ValorB" size ="10">     
+       Operaci&oacute;n:<select name = "opera">
+                    <option value="">Seleccione</option>
+                    <option value="+">Suma</option>
+                    <option value="-">Resta</option>
+                    <option value="*">Multiplicaci&oacute;n</option>
+                    <option value="/">Divisi&oacute;n</option>
+                </select>
+            <input type="button" onclick= "if (fncCambiar()) submit ()"value ="Aceptar">
+
+    </form>
+</body>
+</html>
